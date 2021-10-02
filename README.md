@@ -9,8 +9,8 @@ This is a web development project for hacktoberfest made with HTML, CSS, JS. It 
 first professional looking portfolios. All you have to do is edit the details and add yours and its good to go. <br>
 Key features: easily customisable, user friendly website is designed to cater to developers and freelancers alike. </p>
 
-<h2 align="center"> Sections </h2> :bookmark:
-- HOME
+<h2 align="center"> Sections :bookmark: </h2> 
+<p> HOME
 - ABOUT
     - PERSONAL INFO
     - SKILLS
@@ -18,8 +18,8 @@ Key features: easily customisable, user friendly website is designed to cater to
     - EDUCATION 
 - PORTFOLIO
     - PROJECTS
-- CONTACT FORM AND LINKS
-- BLOG
+- CONTACT
+- BLOG </p>
 
 <div align="center"><h2 align="center"> A demo and preview :movie_camera: </h2>
 <img src="https://cdn.discordapp.com/attachments/789454958453063702/893815324934295573/unknown.png" width="250" height="150">
