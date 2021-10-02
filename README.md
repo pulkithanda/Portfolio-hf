@@ -28,7 +28,7 @@ Key features: easily customisable, user friendly website is designed to cater to
 <img src="https://cdn.discordapp.com/attachments/789454958453063702/893815683845091388/unknown.png" width="250" height="150">
 <img src="https://cdn.discordapp.com/attachments/789454958453063702/893815783266865202/unknown.png" width="250" height="150">
 <img src="https://cdn.discordapp.com/attachments/789454958453063702/893815986023710741/unknown.png" width="250" height="150">
-<p align="center"> View live demo (https://pulkithanda.github.io/Portfolio-hf/index.html).</div>
+<p align="center"> View live demo (https://portfolios-template.netlify.app/).</div>
 
 ## Contribution Guidelines🏗
 
