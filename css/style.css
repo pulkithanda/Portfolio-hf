@@ -503,7 +503,8 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(https://i.pinimg.com/originals/81/80/22/818022fe0a37f01e92859bb44c88fdcd.gif);
+  background-image: url(https://cdn-icons-png.flaticon.com/512/4105/4105448.png);
+  background-size: 100;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
