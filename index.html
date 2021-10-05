@@ -94,7 +94,7 @@
         <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
             <li class="icon-box active">
                 <i class="fa fa-home"></i>
-                <a href="home.html">
+                <a href="#">
                     <h2>Home</h2>
                 </a>
             </li>
@@ -106,8 +106,8 @@
             </li>
             <li class="icon-box">
                 <i class="fa fa-briefcase"></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
+                <a href="projects.html">
+                    <h2>Projects</h2>
                 </a>
             </li>
             <li class="icon-box">
@@ -132,9 +132,9 @@
                 <span></span>
                 <span></span>
                 <ul class="list-unstyled" id="menu">
-                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="active"><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
                     <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="projects.html"><i class="fa fa-folder-open"></i><span>Projects</span></a></li>
                     <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                     <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
                 </ul>
@@ -153,17 +153,17 @@
                 <div>
                     <img src="https://i.imgur.com/qb4cXYa.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
                     <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">Hey there 👋!</h6>
-                    <h1 class="text-uppercase poppins-font"><span>I'm</span> Pulkit Handa</h1>
-                    <p class="open-sans-font">I'm a Web Designer & Full Stack Developer who is focused on crafting user‑friendly products, I have the ability to 
-                        build Discord bots, Telegram bots, Web apps and Websites. I am passionate about building excellent software that improves the 
-                        lives of those around me.</p>
-                    <a href="index.html" class="btn btn-about">Back to the start page</a>
+                    <h1 class="text-uppercase poppins-font"><span>I'm</span> <span id="person-name">Loading...</span></h1>
+                    <p class="open-sans-font" id="person-desc">Loading...</p>
+                    <a href="about.html" class="btn btn-about">More about me</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Main Content Ends -->
-
+    <!-- Load data -->
+    <script src="js/info.js"></script>
+    
     <!-- Template JS Files -->
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/styleswitcher.js"></script>

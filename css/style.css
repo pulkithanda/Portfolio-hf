@@ -539,6 +539,10 @@ body.light hr.separator {
   font-weight: 600;
 }
 
+.home .home-details h1 #person-name {
+  color: inherit;
+}
+
 .home .home-details h6 {
   color: #eee;
   font-size: 22px;
@@ -1007,12 +1011,6 @@ body.light hr.separator {
 .contact .custom-span-contact i.fa-phone-square {
   font-size: 39px;
   top: 7px;
-}
-
-.contact .custom-span-contact span {
-  text-transform: uppercase;
-  opacity: .8;
-  font-weight: 400;
 }
 
 .contact ul.social {
