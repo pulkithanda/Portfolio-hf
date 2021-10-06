@@ -1,12 +1,17 @@
 /**	STYLE SWITCHER
 *************************************************** **/
+// setting up default skin
+const skin = localStorage.getItem('skin') || (tmp = 'yellow',localStorage.setItem('skin', tmp),tmp);
+const bodyClass = document.body.classList;
+bodyClass.add(skin);
+
 jQuery(document).ready(function() {
 	"use strict";
 
     jQuery("#hideSwitcher, #showSwitcher").click(function () {
 
         if (jQuery("#showSwitcher").is(":visible")) {
-
+ 
 			var _identifier = "#showSwitcher";
             jQuery("#switcher").animate({"margin-left": "0px"}, 500).show();
 			createCookie("switcher_visible", 'true', 365);
@@ -32,14 +37,12 @@ jQuery(document).ready(function() {
                       
 });
 
-function setActiveStyleSheet(title) {
-	var i, a, main;
-	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
-			a.disabled = true;
-			if(a.getAttribute("title") == title) { a.disabled = false; }
-		}
-	}
+function changeskin(title) {
+	const current = localStorage.getItem('skin');
+    const next = title;
+   
+    bodyClass.replace(current, next);
+    localStorage.setItem('skin', next);
 
 	// DARK SKIN
 	var color_skin = readCookie('color_skin');
@@ -51,24 +54,9 @@ function setActiveStyleSheet(title) {
 	}
 }
 
-function getActiveStyleSheet() {
-	var i, a;
-	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title") && !a.disabled) { return a.getAttribute("title"); }
-	}
-
-	return null;
-}
-
-function getPreferredStyleSheet() {
-	var i, a;
-	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("rel").indexOf("alt") == -1 && a.getAttribute("title")) {
-			return a.getAttribute("title");
-		}
-	}
-
-	return null;
+function getskin() {
+	const current = localStorage.getItem('skin') || "yellow";
+	return current;
 }
 
 function createCookie(name,value,days) {
@@ -112,8 +100,8 @@ window.onload = function(e) {
 
 	// COLOR SCHEME
 	var cookie = readCookie("style");
-	var title = cookie ? cookie : getPreferredStyleSheet();
-	setActiveStyleSheet(title);
+	var title = getskin();
+	changeskin(title);
 
 	// SWITCHER OPEN|CLOSED
 	if(switcher_visible != 'false') {
