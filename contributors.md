@@ -2,4 +2,4 @@ Add your name here along with the issue you solved 👇 If your PR will be submi
 
 Contributor Name : Hussain Amir
 Username: Hussain6
-Issue Solved: Changed the portfolio image & favicon.
+Issue Solved: Changed the portfolio image & favicon.Username : sumukhdhawade
