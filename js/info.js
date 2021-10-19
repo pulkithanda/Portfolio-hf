@@ -49,17 +49,17 @@ const personDetails = {
       telegram: "https://t.me/Pulkit_Champ"
     }
   };
-  
+
   function setElemAttribute(elemId, elemValue, attr = 'innerText') {
     const elem = document.getElementById(elemId);
-  
+
     // set value only if element is present
     if (elem) {
       console.log("setting attribute for" + elem, attr, elemValue);
       elem[attr] =  elemValue;
     }
   }
-  
+
   function setSkillValue(skillName) {
     setElemAttribute('skill-' + skillName, personDetails.skills[skillName] + '%');
     const div = document.getElementsByClassName('skill-' + skillName)[0];
@@ -69,11 +69,11 @@ const personDetails = {
       div.classList.add(className);
     }
   }
-  
+
   // index.html
   setElemAttribute('person-name', personDetails.personal.firstName + ' ' + personDetails.personal.lastName);
   setElemAttribute('person-desc', personDetails.personal.description);
-  
+
   // about.html
   setElemAttribute('person-fname', personDetails.personal.firstName);
   setElemAttribute('person-lname', personDetails.personal.lastName);
@@ -96,7 +96,7 @@ const personDetails = {
   setElemAttribute('school-course', personDetails.academic.school.course);
   setElemAttribute('college-duration', personDetails.academic.college.duration);
   setElemAttribute('college-name', personDetails.academic.college.name);
-  
+
   // TODO: can be replaced with a loop
   setSkillValue('html');
   setSkillValue('css');
@@ -106,9 +106,10 @@ const personDetails = {
   setSkillValue('wordpress');
   setSkillValue('gitAndGithub');
   setSkillValue('vscode');
-  
+
   // contact.html
   setElemAttribute('github', personDetails.social.github, 'href');
   setElemAttribute('codepen', personDetails.social.codepen, 'href');
   setElemAttribute('telegram', personDetails.social.telegram, 'href');
   setElemAttribute('linkedin', personDetails.social.linkedin, 'href');
+  setElemAttribute('mail-hyperlink', "mailto:"+personDetails.personal.contactMail, 'href');
