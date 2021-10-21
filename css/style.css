@@ -1094,6 +1094,11 @@ body.light hr.separator {
   padding-right: 10px;
 }
 
+.contact .main-content .container #mail-hyperlink {
+  text-decoration: none;
+  color: white;
+}
+
 /*** Blog ***/
 
 .blog .main-content {
