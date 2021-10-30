@@ -1099,6 +1099,11 @@ body.light hr.separator {
   color: white;
 }
 
+.contact .main-content .container #phone-hyperlink {
+  text-decoration: none;
+  color: white;
+}
+
 /*** Blog ***/
 
 .blog .main-content {
